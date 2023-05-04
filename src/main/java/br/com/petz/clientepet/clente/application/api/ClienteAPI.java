@@ -14,5 +14,4 @@ public interface ClienteAPI {
 	@ResponseStatus(code = HttpStatus.CREATED)
 	ClienteResponse postCliente (@RequestBody ClienteRequest clienteRequest);
 	
-	
 }
