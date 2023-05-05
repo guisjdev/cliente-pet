@@ -1,9 +1,9 @@
-package br.com.petz.clientepet.clente.infra;
+package br.com.petz.clientepet.cliente.infra;
 
 import org.springframework.stereotype.Repository;
 
-import br.com.petz.clientepet.clente.application.repository.ClienteRepository;
-import br.com.petz.clientepet.clente.domain.Cliente;
+import br.com.petz.clientepet.cliente.application.repository.ClienteRepository;
+import br.com.petz.clientepet.cliente.domain.Cliente;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 

@@ -1,10 +1,10 @@
-package br.com.petz.clientepet.clente.application.api;
+package br.com.petz.clientepet.cliente.application.api;
 
 import java.time.LocalDate;
 
 import org.hibernate.validator.constraints.br.CPF;
 
-import br.com.petz.clientepet.clente.domain.Sexo;
+import br.com.petz.clientepet.cliente.domain.Sexo;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

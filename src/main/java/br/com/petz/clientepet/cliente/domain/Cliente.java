@@ -1,4 +1,4 @@
-package br.com.petz.clientepet.clente.domain;
+package br.com.petz.clientepet.cliente.domain;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -6,7 +6,7 @@ import java.util.UUID;
 
 import org.hibernate.validator.constraints.br.CPF;
 
-import br.com.petz.clientepet.clente.application.api.ClienteRequest;
+import br.com.petz.clientepet.cliente.application.api.ClienteRequest;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
