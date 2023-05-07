@@ -18,7 +18,7 @@ public class ClienteRequest {
 	@NotBlank
 	@Email
 	private String email;
-	
+
 	@NotBlank
 	private String celular;
 	private String telefone;
