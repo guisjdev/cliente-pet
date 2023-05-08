@@ -36,7 +36,7 @@ public interface ClienteAPI {
 	void deletaClienteDetalhadoResponse (@PathVariable UUID idCliente);
 	
 	@PatchMapping (value = "/{idCliente}")
-	@ResponseStatus(code = HttpStatus.CREATED)
+	@ResponseStatus(code = HttpStatus.NO_CONTENT)
 	void patchAlteraCliente (@PathVariable UUID idCliente,
 			@Valid @RequestBody ClienteAlteraçãoRequest clienteAlteraçãoRequest);
 }

@@ -12,8 +12,6 @@ public class ClienteAlteraçãoRequest {
 
 	@NotBlank
 	private String nomeCompleto;
-	@NotBlank
-	
 
 	@NotBlank
 	private String celular;
@@ -21,7 +19,7 @@ public class ClienteAlteraçãoRequest {
 	private Sexo sexo;
 	@NotNull
 	private LocalDate dataNascimento;
-	
+
 	@NotNull
 	private Boolean aceitaTermos;
 }
