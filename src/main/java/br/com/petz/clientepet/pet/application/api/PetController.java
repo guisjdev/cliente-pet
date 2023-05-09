@@ -23,7 +23,7 @@ public class PetController implements PetAPI {
 		log.info("[finaliza] PetController - postPet");
 		return pet;
 	}
-
+	
 	@Override
 	public List<PetClienteListResponse> getPetsDoClienteComId(UUID idCliente) {
 		log.info("[inicia] PetController - getPetsDoClienteComId");
@@ -35,11 +35,20 @@ public class PetController implements PetAPI {
 	}
 
 	@Override
-	public PetClienteDetalheResponse getClientesAtravesId(UUID idCliente, UUID idPet) {
+	public PetClienteDetalheResponse getPetsDoClienteComId(UUID idCliente, UUID idPet) {
 		log.info("[inicia] PetController - getPetsDoClienteComId");
 		log.info("[idCliente] {} - [idPet] {}", idCliente, idPet);
 		PetClienteDetalheResponse pet = petService.buscaPetsDoClienteComId(idCliente, idPet);
 		log.info("[finaliza] PetController - getPetsDoClienteComId");
 		return pet;
+	}
+
+	@Override
+	public void deletePetDoClienteComId(UUID idCliente, UUID idPet) {
+		log.info("[inicia] PetController - deletePetDoClienteComId");
+		log.info("[inicia] PetController - deletePetDoClienteComId");
+		petService.deletaPetDoClienteComId(idCliente, idPet);
+		log.info("[idCliente] {} - [idPet] {}", idCliente, idPet);
+		
 	}
 }
