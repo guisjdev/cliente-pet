@@ -1,5 +1,6 @@
 package br.com.petz.clientepet.pet.application.api;
 
+import java.util.List;
 import java.util.UUID;
 
 import org.springframework.web.bind.annotation.RestController;
@@ -23,4 +24,12 @@ public class PetController implements PetAPI {
 		return pet;
 	}
 
+	@Override
+	public List<PetClienteListResponse> getPetsDoClienteComId(UUID idCliente) {
+		log.info("[inicia] PetController - getPetsDoClienteComId");
+		log.info("[idCliente] {}", idCliente);
+		log.info("[finaliza] PetController - getPetsDoClienteComId");
+
+		return null;
+	}
 }
