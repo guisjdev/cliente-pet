@@ -1,6 +1,7 @@
 package br.com.petz.clientepet.pet.domain;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.UUID;
 
 import jakarta.persistence.Column;
@@ -31,11 +32,15 @@ public class Pet {
 	@Enumerated(EnumType.STRING)
 	private TipoPet tipo;
 	private String microchip;
-	private String Raca;
+	private String raca;
 	@Enumerated(EnumType.STRING)
 	private Sexo sexo;
 	private String pelagemCor;
-	private String rga;
 	@NotNull
 	private LocalDate dataNascimento;
+	private String rga;
+	private Integer peso;
+
+	private LocalDateTime dataHoraDoCadastro;
+	private LocalDateTime dataHoraDaUltimaAlteracao;
 }

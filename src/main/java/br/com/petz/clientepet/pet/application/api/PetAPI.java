@@ -17,7 +17,6 @@ import jakarta.validation.Valid;
 public interface PetAPI {
 	@PostMapping
 	@ResponseStatus(code = HttpStatus.CREATED)
-	PetResponse postPet (@PathVariable UUID idCliente,
-			@Valid @RequestBody PetRequest petRequest);
-	
+	PetResponse postPet(@PathVariable UUID idCliente, @Valid @RequestBody PetRequest petRequest);
+
 }
